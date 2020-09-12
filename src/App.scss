@@ -1,0 +1,23 @@
+.App {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(
+    176deg,
+    rgba(83, 142, 173, 1) 0%,
+    rgba(143, 186, 204, 1) 100%
+  );
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .App {
+    width: 30%;
+  }
+}

@@ -1,0 +1,41 @@
+.clock-container {
+  position: relative;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  svg {
+    width: auto;
+  }
+  .timer-count-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    margin: 0;
+  }
+  .dead-centre {
+    width: 100%;
+    margin-top: .75em;
+  }
+}
+.clock-dial {
+  transform: rotate(-90deg);
+  fill: none;
+  stroke: $colour-secondary;
+}
+#clock-face {
+  fill: $colour-primary-tint;
+  opacity: .5;
+}
+.timer-count {
+  font-family: 'Roboto Mono', monospace;
+  font-size: $font-large;
+}
+.timer-delimiter {
+  position: relative;
+  right:1px;
+  bottom: 2px;
+}

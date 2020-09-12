@@ -1,0 +1,65 @@
+.tm-add-wrapper {
+  width: 100%;
+  .tm-btn-add {
+    &:disabled {
+      color: $colour-primary-tint;
+    }
+    width: 20%;
+    transition: 2s color;
+  }
+  .tm-input-add {
+    width: 80%;
+  }
+}
+
+.tm-list {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+
+  button[class^="tm-item-"] {
+    background: none;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    text-align: left;
+  }
+
+  .tm-item {
+    display: flex;
+    border-bottom: 1px solid $colour-primary-tint;
+    animation: fadeIn ease 2s;
+  }
+
+  .tm-item-date {
+    color: $colour-primary-tint;
+    font-size: 0.65em;
+  }
+
+  .tm-item-delete {
+    width: 20%;
+    padding: 1em;
+    &.confirm-delete {
+      background-color: #d4787c;
+      transition: background-color 0.5s;
+      svg {
+        fill: #f5e3e4;
+      }
+    }
+  }
+
+  .tm-item-select {
+    width: 80%;
+    padding: .5em;
+  }
+
+  .tm-item-timecounter {
+    font-size: 0.55em;
+    float: right;
+  }
+}
+
+.task-title {
+  margin: 1.25em 0 1.25em;
+}

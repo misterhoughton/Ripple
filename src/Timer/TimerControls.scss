@@ -1,0 +1,10 @@
+.btn-timer-wrapper {
+    margin-top: 1em;
+    *[class^="btn-timer-"] {
+        width: 100%;
+        font-size: $font-medium;
+        &.hidden {
+            display: none;
+        }
+    }
+}

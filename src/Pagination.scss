@@ -1,0 +1,17 @@
+*[id^="page-"] {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  left: 0;
+  transition: opacity 0.75s;
+  transition: transform 0.75s;
+  &.active {
+    transform: translateX(0) !important;
+  }
+}
+#page-1 {
+  transform: translateX(-100%);
+}
+#page-2 {
+  transform: translateX(100%);
+}

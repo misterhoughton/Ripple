@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Mono:wght@100&display=swap');
+@import "./Config.scss";
+@import "./Animations.scss";
+
+@import "./App.scss";
+@import "./Header/Header.scss";
+@import "./Icons.scss";
+@import "./Pagination.scss";
+@import "./Timer/Timer.scss";
+@import "./Timer/TimerControls.scss";
+@import "./TaskManager/TaskManager.scss";
+
+body {
+  margin: 0;
+  background-color: #272727;
+  color: $colour-tertiary;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+h1,h2,h3,h4{
+  font-weight: normal;
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  color: $colour-tertiary;
+  font-family: 'Raleway', sans-serif;
+  font-size: $font-medium;
+}
+
+input[type="text"]{
+  padding: .5em;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: $font-medium;
+}
